@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품 주문서</h1>
+    <form action="" method="get" autocomplete="off">
+      <fieldset>
+        <legend>개인 정보</legend>
+
+        <ul>
+          <li>
+            <label for="name">이름 </label><input type="text" name="name" id="name" placeholder="여백없이 입력" />
+          </li>
+          <li>
+            <label for="tel">연락처 </label> <input type="tel" name="tel" id="tel" placeholder="연락가능한 번호" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+
+        <ul>
+          <li><label for="adress">주소 </label><input type="text" name="adress" id="adress" size="45" /></li>
+          <li><label for="tel">전화번호 </label> <input type="tel" name="tel" id="tel" /></li>
+          <li>
+            <label for="memo">메 모 </label>
+            <textarea name="memo" id="memo" cols="35" rows="4"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+
+        <ul>
+          <li>
+            <input type="checkbox" name="world" id="world" />
+            <label for="apple">과테말라 안티구아 (100g)</label>
+            <input type="number" name="number" id="number" value="0" max="100" min="0" step="1" />개
+          </li>
+          <li>
+            <input type="checkbox" name="world" id="world" />
+            <label for="apple">인도네시아 만델링(100g)</label>
+            <input type="number" name="number" id="number" value="0" max="100" min="0" step="1" />개
+          </li>
+          <li>
+            <input type="checkbox" name="world" id="world" />
+            <label for="apple">탐라는도다(블렌딩)(100g)</label>
+            <input type="number" name="number" id="number" value="0" max="100" min="0" step="1" />개
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">주문하기</button> <button type="reset">다시 작성</button>
+    </form>
+  </body>
+</html>
