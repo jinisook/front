@@ -1,0 +1,33 @@
+/* 
+    css 단위 
+    1) px : 고정값
+    2) em : em 단위가 쓰인 곳의 폰트 크기 배수
+    3) rem : 문서의 폰트 기본값의 배수
+    4) % : 상대값
+
+*/
+
+html {
+  font-size: 14px;
+}
+
+div {
+  font-size: 2em; /* px * em */
+}
+
+p {
+  font-size: 2rem;
+}
+
+div p {
+  font-size: 2rem;
+}
+
+/* 텍스트 너비고정 */
+/* P {
+  width: 800px;
+} */
+/* 브라우저의 너비에 따른 % */
+P {
+  width: 80%;
+}

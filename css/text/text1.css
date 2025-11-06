@@ -1,0 +1,15 @@
+/* 자간, 단어간격, 줄높이 em 단위 권장 */
+.letter {
+  /* 자간 : 글자 사이 간격 */
+  /* letter-spacing: -2px; */
+  /* font-size: 14px;
+  line-height: 16px; */
+  /* 16-14 위아래 일씩 */
+  font-size: 18px;
+  /* 줄높이 - 주로 em 사용*/
+  line-height: 1.2em;
+}
+.word {
+  /* 단어 간격 */
+  word-spacing: -2px;
+}
