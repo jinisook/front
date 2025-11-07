@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  height: 700px;
+  border: 2px double darkcyan;
+  flex-direction: column;
+  /* flex-direction: row; 기본
+  flex-wrap: nowrap; 기본 */
+  justify-content: space-evenly;
+}
+
+.container div {
+  width: 200px;
+  height: 100px;
+  border: 2px dashed black;
+  /* display: inline-block; */
+}
+
+.container div:first-child {
+  background-color: aquamarine;
+}
+.container div:nth-child(2) {
+  background-color: mediumaquamarine;
+}
+.container div:nth-child(3) {
+  background-color: mediumseagreen;
+}
+.container div:nth-child(4) {
+  background-color: deepskyblue;
+}
+.container div:nth-child(5) {
+  background-color: skyblue;
+}
+.container div:nth-child(6) {
+  background-color: aqua;
+}

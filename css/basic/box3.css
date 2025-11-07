@@ -21,10 +21,16 @@ div {
   height: 300px;
   color: white;
   font-size: 5em;
-  text-align: center;
+  text-align: center; /* 수평 가운데 */
   border: 2px solid black;
   border-radius: 50%;
   /* border-radius: 10px 20px; */
 
-  line-height: 285px;
+  line-height: 300px; /* 수직 가운데로 사용 */
+  padding: 0;
+
+  /* 글자 가운데 방법
+  justify-content: center;
+  align-items: center; 
+  */
 }
