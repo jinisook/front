@@ -3,7 +3,7 @@ flex 레이아웃
     - display: flex;
 
     - flex-wrap : 줄바꿈 지정
-    3) nowrap : 줄바꿈 안함 (기본값)
+    1) nowrap : 줄바꿈 안함 (기본값)
     2) wrap : 줄바꿈
     3) wrap-reverse : 줄바꿈(왼쪽부터 아래줄로 이동)
 

@@ -1,0 +1,38 @@
+/* 
+    - 반응형 웹 : media 쿼리
+    min-width, max-width
+    @media (max-width: 960px){}
+    @media (min-width: 481px) and (max-width: 767px){}
+    @media (max-width: 480px),(min-width: 767px){} -> or조건
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100px;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    height: 100px;
+    background-color: mediumaquamarine;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    height: 100px;
+    background-color: mediumpurple;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    height: 100px;
+    background-color: salmon;
+  }
+}

@@ -1,0 +1,25 @@
+[type="radio"]:checked + label {
+  color: slateblue;
+}
+
+[type="radio"]:disabled + label {
+  color: #30ba96;
+  text-decoration: underline;
+}
+
+[type="radio"]:enabled + label {
+  text-decoration: line-through;
+}
+
+[type="text"]:focus {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: darksalmon;
+  /* outline: none; */
+  /* focus 기본은 outline 진하게 */
+  outline: 2px solid darkblue;
+}
+
+[type="text"]:required {
+  border-color: darkcyan;
+}

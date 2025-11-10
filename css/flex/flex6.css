@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333338;
+  font-size: 16px;
+  color: #444;
+}
+
+.container {
+  display: flex;
+}
+
+.main-content,
+.sidebar {
+  margin: 10px;
+  background-color: #eee;
+  padding: 6px;
+}
+
+.panel {
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  /* 1) 여러 줄 가능함으로 바꾸는 방법 - wrap */
+  /* flex-wrap: wrap; 
+  align-content: space-between; */
+
+  /* 2) 주축을 바꾸는 방법 - column */
+  flex-direction: column;
+  justify-content: space-between;
+}
