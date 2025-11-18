@@ -11,9 +11,9 @@
 }
 
 /* 7. 자식 결합자 : > */
-.outer > li {
+/* .outer > li {
   color: dodgerblue;
-}
+} */
 /* 사과, 포도, 딸기, 키위만 의미 */
 .outer > li li {
   text-decoration: underline;

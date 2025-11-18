@@ -14,7 +14,6 @@ javascript 라이브러리 : react, jqeury
  2) <head>~</head> or </body> 앞 쪽에 <script></script> 작성 
  3) 인라인방식 (비추천)
 
-
 변수와 상수 선언
 -----------------------------------
  var           let         const
@@ -30,7 +29,6 @@ javascript 라이브러리 : react, jqeury
  4) object
  5) undefined(값을 담지 않은 상황), null(비어 있는 상태)
  6) {} : 객체
-
 
 연산자
  1) 산술 : / => 나머지까지 나누기 실행
