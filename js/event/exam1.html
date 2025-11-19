@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The Light Blub</h2>
+    <div>
+      <button type="button">Turn on the light</button>
+      <img src="../img/pic_bulboff.gif" alt="" />
+      <button type="button">Turn off the light</button>
+    </div>
+
+    <script>
+      // Turn on the light 클릭 시 img src 수정 ../img/pic_bulbon.gif
+      // Turn off the light 클릭 시 img src 수정 ../img/pic_bulboff.gif
+      // img(변수명).src = "";
+
+      // 버튼 두 개 찾기
+      //   const btns = document.querySelectorAll("[type=button]");
+      //   // 이미지 요소 찾기
+      //   const img = document.querySelector("img");
+      //   btns[0].addEventListener("click", () => {
+      //     img.src = "../img/pic_bulbon.gif";
+      //   });
+      //   btns[1].addEventListener("click", () => {
+      //     img.src = "../img/pic_bulboff.gif";
+      //   });
+
+      //   선생님
+      //   const btns = document.querySelectorAll("button");
+      //   const source = (src) => {
+      //     document.querySelector("img").src = src;
+      //   };
+      //   btns[0].addEventListener("click", () => source("../img/pic_bulbon.gif"));
+      //   btns[1].addEventListener("click", () => source("../img/pic_bulboff.gif"));
+
+      //   이벤트 버블링
+      const source = (src) => {
+        document.querySelector("img").src = src;
+      };
+      const div = document.querySelector("div");
+      div.addEventListener("click", (e) => {
+        // 어느 버튼에서 이벤트 발생했는지 찾기
+        const evt = e.target;
+        console.log(evt);
+
+        if (e.target.textContent.includes("on")) {
+          source("../img/pic_bulbon.gif");
+        } else {
+          source("../img/pic_bulboff.gif");
+        }
+      });
+    </script>
+  </body>
+</html>

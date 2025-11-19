@@ -37,3 +37,9 @@ javascript 라이브러리 : react, jqeury
     ===, !== : 값, 타입 비교
         3 == "3" (true)
         3 === "3" (false)
+
+
+이벤트 버블링
+- 특정 HTML 요소에서 이벤트가 발생했을 때 이벤트가 상위 요소들로 전달(전파)되는 방식
+- e.target : 이벤트 대상
+- e.currentTarget : 이벤트 대상의 부모요소
