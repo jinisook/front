@@ -1,3 +1,24 @@
+document.querySelector("a").addEventListener("click", (e) => {
+  // a 태그 막기 -> 링크 이동X
+  e.preventDefault();
+
+  // href 값 가져오기
+  console.log("href", e.target.href);
+  // target 값 가져오기
+  console.log("target", e.target.target);
+  // data-link 값 가져오기(js는 - 사용 불가) -> data- -> dataset
+  console.log("data-link", e.target.dataset.link);
+  console.log("data-link-test", e.target.dataset.linkTest); // - - 두 개 이상 사용
+
+  // 주소에 naver가 들어았다면 이동
+  // if (e.target.href.includes("naver")) {
+  //   location.href = e.target.href;
+  // } else {
+  //   // 아니라면 구글로 이동
+  //   location.href = "http://www.google.com";
+  // }
+});
+
 // form submit 발생 시
 
 document.querySelector("form").addEventListener("submit", (e) => {
