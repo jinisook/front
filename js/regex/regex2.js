@@ -31,7 +31,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   // 이름 입력값 확인 : 한글, 2~5자 허용
   const name = form.name.value;
   // -> 정규식 만들기
-  const regName = /^[가-힣]{2,5}]$/; // ^ : 시작, $ : 끝
+  const regName = /^[가-힣]{2,5}$/; // ^ : 시작, $ : 끝
   // 전화번호 입력값 확인 : 000-1234-5678
   const tel = form.tel.value;
   const regTel = /^\d{3}-\d{4}-\d{4}&/;
